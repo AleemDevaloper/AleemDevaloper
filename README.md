@@ -1,19 +1,4 @@
 ## Hi there 👋
-
-<style>
-   .typing-container p {
-    font-size: 24px;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 0.15em solid orange; /* Cursor */
-    animation: blink-caret 0.75s step-end infinite;
-}
-
-@keyframes blink-caret {
-    from, to { border-color: transparent; }
-    50% { border-color: orange; }
-}
-</style>
 <h1 align="center">Hi 👋, I'm Muhammad Aleem</h1>
 <h3 align="center">A passionate
    <div class="typing-container">
@@ -60,46 +45,3 @@ Here are some ideas to get you started:
 
 
 
-  <script>
-        document.addEventListener('DOMContentLoaded', () => {
-    const textElement = document.getElementById('typingText');
-    const lines = [
-        "Full stack Web Developer.",
-        "Andriod and Ios Mobile App developer",
-        "Windows and Ios dekstop App developer"
-    ];
-
-    let lineIndex = 0;
-    let charIndex = 0;
-    let isDeleting = false;
-
-    function type() {
-        let currentText = lines[lineIndex];
-        
-        if (isDeleting) {
-            textElement.textContent = currentText.substring(0, charIndex--);
-            if (charIndex < 0) {
-                isDeleting = false;
-                lineIndex++;
-                if (lineIndex >= lines.length) {
-                    lineIndex = 0;
-                }
-                setTimeout(type, 500); // Small pause before typing next line
-            } else {
-                setTimeout(type, 50);
-            }
-        } else {
-            textElement.textContent = currentText.substring(0, charIndex++);
-            if (charIndex > currentText.length) {
-                isDeleting = true;
-                setTimeout(type, 1000); // Pause before starting deletion
-            } else {
-                setTimeout(type, 100);
-            }
-        }
-    }
-
-    type();
-});
-
-    </script>
