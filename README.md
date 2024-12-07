@@ -1,7 +1,10 @@
 ## Hi there 👋
 
 <h1 align="center">Hi 👋, I'm Muhammad Aleem</h1>
-<h3 align="center">A passionate Full Stack developer</h3>
+<h3 align="center">A passionate
+   <div class="typing-container">
+        <p id="typingText"></p>
+  </div>Full Stack developer</h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aleemdevaloper&label=Profile%20views&color=0e75b6&style=flat" alt="aleemdevaloper" /> </p>
 
@@ -24,6 +27,49 @@
 
 <p>&nbsp;<img align="center" src="https://github-readme-stats.vercel.app/api?username=aleemdevaloper&show_icons=true&locale=en" alt="aleemdevaloper" /></p>
 
+  <script>
+        document.addEventListener('DOMContentLoaded', () => {
+    const textElement = document.getElementById('typingText');
+    const lines = [
+        "Full stack Web Developer.",
+        "Andriod and Ios Mobile App developer",
+        "Windows and Ios dekstop App developer"
+    ];
+
+    let lineIndex = 0;
+    let charIndex = 0;
+    let isDeleting = false;
+
+    function type() {
+        let currentText = lines[lineIndex];
+        
+        if (isDeleting) {
+            textElement.textContent = currentText.substring(0, charIndex--);
+            if (charIndex < 0) {
+                isDeleting = false;
+                lineIndex++;
+                if (lineIndex >= lines.length) {
+                    lineIndex = 0;
+                }
+                setTimeout(type, 500); // Small pause before typing next line
+            } else {
+                setTimeout(type, 50);
+            }
+        } else {
+            textElement.textContent = currentText.substring(0, charIndex++);
+            if (charIndex > currentText.length) {
+                isDeleting = true;
+                setTimeout(type, 1000); // Pause before starting deletion
+            } else {
+                setTimeout(type, 100);
+            }
+        }
+    }
+
+    type();
+});
+
+    </script>
 <!--
 **AleemDevaloper/AleemDevaloper** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
