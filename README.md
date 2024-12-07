@@ -1,9 +1,23 @@
 ## Hi there 👋
 
+<style>
+   .typing-container p {
+    font-size: 24px;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 0.15em solid orange; /* Cursor */
+    animation: blink-caret 0.75s step-end infinite;
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+</style>
 <h1 align="center">Hi 👋, I'm Muhammad Aleem</h1>
 <h3 align="center">A passionate
    <div class="typing-container">
-        <p id="typingText"></p>
+        <p id="typingText" ></p>
    </div></h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aleemdevaloper&label=Profile%20views&color=0e75b6&style=flat" alt="aleemdevaloper" /> </p>
