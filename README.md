@@ -1,9 +1,7 @@
 ## Hi there 👋
 <h1 align="center">Hi 👋, I'm Muhammad Aleem</h1>
 <h3 align="center">A passionate
-   <div class="typing-container">
-        <p id="typingText" ></p>
-   </div></h3>
+   <a href="https://git.io/typing-svg"><img src="https://readme-typing-svg.demolab.com?font=Arial&weight=700&pause=1000&color=F7F7F7&width=435&lines=Full+stack+Web+developer;iOS+and+Android+Mobile+App+developer;iOS+and+Android+Desktop+App+developer" alt="Typing SVG" /></a></h3>
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=aleemdevaloper&label=Profile%20views&color=0e75b6&style=flat" alt="aleemdevaloper" /> </p>
 
